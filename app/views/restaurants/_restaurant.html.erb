@@ -1,0 +1,12 @@
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  <div>
+    <%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none" %>
+    <p><%= restaurant.address %></p>
+  </div>
+  <div>
+    <%= link_to "Edit", edit_restaurant_path(restaurant), class: "btn btn-warning btn-sm" %>
+    <%= link_to "Delete", restaurant_path(restaurant), data: { turbo_method: :delete,
+                                                                turbo_confirm: "Are you sure?" },
+                                                                class: "btn btn-outline-danger btn-sm" %>
+  </div>
+</li>

@@ -1,0 +1,5 @@
+<h1>Restaurants's List</h1>
+<div>
+<%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary mb-3 mt-3" %>
+<%= render "list", restaurants: @restaurants %>
+</div>
